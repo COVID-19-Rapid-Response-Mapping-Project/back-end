@@ -1,0 +1,35 @@
+{
+	"name": "back-end",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"server": "nodemon index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/COVID-19-Rapid-Response-Mapping-Project/back-end.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/COVID-19-Rapid-Response-Mapping-Project/back-end/issues"
+	},
+	"homepage": "https://github.com/COVID-19-Rapid-Response-Mapping-Project/back-end#readme",
+	"devDependencies": {
+		"nodemon": "^2.0.2"
+	},
+	"dependencies": {
+		"cors": "^2.8.5",
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"helmet": "^3.22.0",
+		"jsonwebtoken": "^8.5.1",
+		"knex": "^0.20.13",
+		"morgan": "^1.10.0",
+		"pg": "^8.0.0",
+		"sqlite3": "^4.1.1"
+	}
+}
