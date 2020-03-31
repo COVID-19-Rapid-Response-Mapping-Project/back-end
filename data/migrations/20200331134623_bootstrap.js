@@ -2,17 +2,16 @@ exports.up = function(knex) {
 	return knex.schema
 		.createTable('resources', tbl => {
 			tbl.increments();
-			tbl.string('name-of-org', 255).notNullable();
-			tbl.string('type-of-org', 255).notNullable();
-			tbl.string('state', 255).notNullable();
-			tbl.string('state-region', 255);
-			tbl.float('lat', 9, 6);
-			tbl.float('lng', 9, 6);
-			tbl.string('resource-type', 255).notNullable();
-			tbl.text('description', 255);
+			tbl.string('org-name', 255).notNullable();
+			tbl.string('relief-target', 255).notNullable();
+			tbl.string('geographic-remit', 255).notNullable();
 			tbl.string('website-to-apply', 255).notNullable();
-			tbl.string('website-to-support', 255);
-			tbl.string('phone-number', 255);
+			tbl.string('resource-type', 255).notNullable();
+			tbl.string('type-of-org', 255).notNullable();
+			tbl.string('address', 255);
+			tbl.string('contact-info', 255);
+			tbl.text('program-description', 255);
+			tbl.string('website-to-donate', 255);
 		})
 		.createTable('users', tbl => {
 			tbl.increments();
