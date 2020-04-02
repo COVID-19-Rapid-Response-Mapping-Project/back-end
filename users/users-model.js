@@ -3,6 +3,7 @@ const db = require('../data/dbConfig');
 module.exports = {
 	insert,
 	update,
+	remove,
 	findAll,
 	findBy
 };
@@ -15,6 +16,12 @@ function update(id, userInfo) {
 	return db('users')
 		.where({ id })
 		.update(userInfo, 'id');
+}
+
+function remove(id) {
+	return db('users')
+		.where({ id })
+		.del();
 }
 
 function findAll() {
